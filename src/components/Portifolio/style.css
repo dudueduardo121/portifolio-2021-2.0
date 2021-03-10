@@ -1,0 +1,76 @@
+.countdownContainer {
+    height: auto;
+    padding: 60px;
+}
+
+.rowSlider {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.linha h1 {
+    color: var(--first-color);
+    font-size: 3rem;
+}
+
+.linha::after {
+    position: absolute;
+    content: '';
+    width: 14%;
+    height: 4px;
+    background: var(--dark-color);
+    top: 55px;
+    right: 43%;
+}
+
+.sliderItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 15px;
+}
+
+.card {
+    position: relative;
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+a.buttonSlider {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 2rem;
+    height: 2rem;
+    background: var(--first-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    transition: all 1s;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.buttonSlider:hover {
+    background: var(--white-color);
+    color: var(--dark-color);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .countdownContainer {
+        height: auto;
+        padding: 0;
+        margin-top: 60px;
+    }
+}
+

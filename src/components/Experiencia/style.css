@@ -1,0 +1,77 @@
+.countdownAprendiz {
+    padding-bottom: 80px;
+}
+
+.countContainer {
+    margin-top: 60px;
+}
+
+.linha h1 {
+    color: var(--first-color);
+    font-size: 3rem;
+}
+
+.linha::after {
+    position: absolute;
+    content: '';
+    width: 12%;
+    height: 4px;
+    background: var(--dark-color);
+    top: 60px;
+    right: 44%;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background: var(--white-color);
+    box-shadow: 3px 5px 14px 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cardContent:hover + h2{
+    background: white;
+}
+
+
+.card .cardBody {
+    width: 100%;
+    height: 100%;
+}
+
+.faIcon {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    color: var(--first-color);
+    transition: 0.5s;
+}
+
+.cardContent {
+    padding: 20px;
+}
+
+.cardContent h2 {
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.cardContent p {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 385px;
+    }
+    .countdownAprendiz {
+        margin-top: 60px;
+    }
+ }
+

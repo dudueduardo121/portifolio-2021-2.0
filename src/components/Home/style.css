@@ -1,0 +1,149 @@
+.challengeBoxContainer {
+    height: 100vh;
+    background-image: url('../../assets/images/bg.png');
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.challengeBoxContainer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--first-color);
+    opacity: 0.8;
+}
+
+.homeContainer{
+    height: calc(100vh - var(--header-height));
+    grid-row-gap: 5rem;
+    row-gap: 5rem;
+    flex: 1 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6.25rem;
+    gap: 0rem;
+    align-content: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.homeCollImg {
+    height: 100vh;
+    z-index: 1;
+}
+
+.homeTitle {
+    align-self: flex-end;
+    font-size: var(--big-font-size);
+    color: var(--white-color);
+    line-height: 1;
+}
+
+.homeTitle span {
+    text-shadow: 0 20px 25px rgba(0,0,0,.5);
+}
+
+.homeScrool {
+    align-self: center;
+    padding-bottom: var(--mb-4);
+}
+
+.homeScroolLink {
+    writing-mode: vertical-lr;
+    color: var(--white-color);
+}
+
+.homeIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.homeImg {
+    position: absolute;
+    right: 334px;
+    bottom: 40px;
+    height: 77vh;
+    width: 444px;
+    /* box-shadow: 0 0 20px -8px; */
+    border-radius: 30px 200px 20px 200px;
+    box-shadow: 4px 40px 101px -35px;
+    background: rgba(255, 255, 255, 0.938);
+}
+
+.homeCollIcon {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    margin: 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        height: 50vh;
+    }
+
+    .homeCollIcon {
+        position: absolute;
+        top: 9%;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .homeImg {
+        position: absolute;
+        right: 2px;
+        bottom: 8px;
+        height: 75vh;
+        width: 99vw;
+        border-radius: 30px 200px 20px 200px;
+        box-shadow: 4px 40px 101px -35px;
+        background: rgba(255, 255, 255, 0.93);
+    }
+
+    .homeScrool {
+        width: 100vw;
+    }
+
+    .homeTitle {
+        font-size: 70px;
+    }
+
+    .icon {
+        display: none;
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 160%;
+    color: white;
+    right: 0;
+    font-size: 2.8rem;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+
+@keyframes scrollTop {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}
+
+
+
+
+
+
+
+
