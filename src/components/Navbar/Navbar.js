@@ -14,11 +14,12 @@ export default function Navbar() {
 
             <nav className="nav bdGrid">
                 <div>
-                    <a href="#" className="navLogo">
+                    <a href="/" className="navLogo">
                     <img className="menuIcon" src="icons/logo-3.svg" alt="Menu"/>
                     Eduardo Gomes
                     </a>
                 </div>
+            
             
                 {/* <ul className={click ? `${styles.navMenu} ${styles.active}` : `${styles.navMenus}`}>
                         <li className={styles.navItem} onClick={closeMobileMenu}><a href="#home" className={`${styles.navLink} ${styles.show}`}>Home</a></li>
