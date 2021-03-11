@@ -1,6 +1,6 @@
 Portifolio Eduardo 2021 2.0
 
-portifolio-eduardo-2021.netlify.app
+https://portifolio-eduardo-2021.netlify.app/
 
 
 🛠 Tecnologias
