@@ -17,7 +17,7 @@
     width: 12%;
     height: 4px;
     background: var(--dark-color);
-    top: 60px;
+    top: 65px;
     right: 44%;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .cardContent {
-    padding: 20px;
+    padding: 15px;
 }
 
 .cardContent h2 {
@@ -62,16 +62,17 @@
 }
 
 .cardContent p {
-    font-size: 1.1rem;
+    padding-top: 15px;
+    font-size: 1rem;
     color: var(--dark-color);
 }
 
 @media screen and (max-width: 768px) {
+    .countdownAprendiz {
+        margin-top: 50px;
+    }
     .card {
         width: 385px;
-    }
-    .countdownAprendiz {
-        margin-top: 60px;
     }
  }
 

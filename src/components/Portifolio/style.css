@@ -1,9 +1,10 @@
-.countdownContainer {
+.containerPotifolio {
     height: auto;
-    padding: 60px;
+    margin-top: 60px;
 }
 
 .rowSlider {
+    padding: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -24,20 +25,24 @@
 
 .sliderItem {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-    margin: 15px;
+    margin-top: 20px;
 }
 
-.card {
+
+.card-portifolio {
     position: relative;
     opacity: 0.8;
     transition: all 1s;
+    width: 500px;
+    height: auto;
+    position: relative;
+    background: var(--white-color);
+    box-shadow: 3px 5px 14px 1px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.card:hover {
+.card-portifolio:hover {
     opacity: 1;
 }
 

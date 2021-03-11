@@ -1,21 +1,21 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './style.css'
 
 
-/* import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faCode, faRocket } from '@fortawesome/free-solid-svg-icons' */
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faCode, faRocket } from '@fortawesome/free-solid-svg-icons'
 
 
 /* inicio scrool-page react aos */
-/* import Aos from 'aos'
-import 'aos/dist/aos.css' */
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 /* fim */
 
 export default function Experiencia() {
 
-/*     useEffect(() => {
+    useEffect(() => {
         Aos.init({duration: 2000});
-    }, []); */
+    }, []);
 
     return (
         <div className="countdownAprendiz">
@@ -25,13 +25,13 @@ export default function Experiencia() {
                 </div>
             </div>
 
-            <div className="container countContainer" >
+            <div className="container countContainer" data-aos="fade-up">
                 <div className="row">
                     <div className="col-12 col-md-6 my-3">
                         <div className="card">
                             <div className="cardBody">
                                 <div className="cardContent">
-                                   {/*  <FontAwesomeIcon className={styles.faIcon} icon={faCode}/>  */}  
+                                   <FontAwesomeIcon className="faIcon" icon={faCode}/>
                                     <h2>
                                         Desenvolvedor Front-End Junior - UolEdtech
                                     </h2>
@@ -46,7 +46,7 @@ export default function Experiencia() {
                         <div className="card">
                             <div className="cardBody">
                                 <div className="cardContent">
-                                    {/* <FontAwesomeIcon className={styles.faIcon} icon={faRocket}/> */}
+                                    <FontAwesomeIcon className="faIcon" icon={faRocket}/>
                                     <h2>
                                         Estagiário Suporte e Sistemas - Lee Brock Camargo Advogados
                                     </h2>

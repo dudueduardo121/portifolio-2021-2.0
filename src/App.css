@@ -59,11 +59,14 @@
     --blue-twitter:#2aa9e0;
 }
 
+.pagina {
+    overflow: hidden;
+}
+
 *,::before,::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body{
@@ -115,48 +118,4 @@ img{
     height: auto;
     display: block;
 }
-
-.section {
-    padding: 3rem 0;
-}
-
-.section-title {
-    position: relative;
-    text-align: center;
-}
-
-.section-title::after {
-    position: absolute;
-    content: '';
-    width: 32px;
-    height: .18rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 2rem;
-    background: #ffffff;
-}
-
-
-/* Slider react-caroucel */
-
-.lgksPe {
-    background: var(--first-color)!important;
-    color: var(--white-color)!important;
-}
-
-.lgksPe:hover {
-    background: var(--dark-color)!important;
-}
-
-.guuruq {
-    box-shadow: 0 0 1px 3px var(--first-color)!important;
-}
-
-.cJeRRR {
-    background: var(--dark-color)!important;
-    box-shadow: 0 0 1px 3px var(--dark-color)!important;
-}
-/* Fim slider */
-
 

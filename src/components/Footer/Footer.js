@@ -9,7 +9,7 @@ import 'aos/dist/aos.css' */
 /* fim */
 
 /* Inicio Fontawesome icons */
-/* import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { faImages } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -33,7 +33,7 @@ library.add(
   faTwitter,
   faLinkedin,
   faWhatsapp
-); */
+);
 /* Fim */
 
 export default function Footer() {
@@ -47,16 +47,16 @@ export default function Footer() {
             <div className="text-center p-3 footer">
                 <div className="footerIcons">
                     <a href="https://www.facebook.com/eduardo.dudu.5496">
-                        {/* <FontAwesomeIcon icon={faFacebook} /> */}
+                        <FontAwesomeIcon icon={faFacebook} />
                     </a>
                     <a href="https://www.linkedin.com/in/eduardo-gomes12/">
-                        {/* <FontAwesomeIcon icon={faLinkedin} /> */}
+                        <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                     <a href="https://github.com/dudueduardo121">
-                        {/* <FontAwesomeIcon icon={faGithubAlt} /> */}
+                        <FontAwesomeIcon icon={faGithubAlt} />
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=11958688430" target="_blanck">
-                        {/* <FontAwesomeIcon icon={faWhatsapp} /> */}
+                        <FontAwesomeIcon icon={faWhatsapp} />
                     </a>
                 </div>
                 <p>Copyright © Eduardo | 2021</p>

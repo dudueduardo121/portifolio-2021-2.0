@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './style.css'
 
 /* inicio scrool-page react aos */
-/* import Aos from 'aos'
-import 'aos/dist/aos.css' */
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 /* fim */
 
 /* Inicio Fontawesome icons */
-/* import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { faImages } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -31,14 +31,14 @@ library.add(
   faTwitter,
   faLinkedin,
   faReadme
-); */
+);
 /* Fim */
 
 export default function CompletedChallenges() {
     
-/*     useEffect(() => {
+    useEffect(() => {
         Aos.init({duration: 2000});
-    }, []); */
+    }, []);
 
     return (
         <div className="container bgContainer">
@@ -49,7 +49,7 @@ export default function CompletedChallenges() {
                     </h1>
                 </div>
             </div>
-            <div className="row">
+            <div className="row" data-aos="fade-up">
                 <div className="col-12 col-md-5 colunaImg">
                     <img src="resume.svg" alt=""/>
                 </div>
@@ -65,18 +65,18 @@ export default function CompletedChallenges() {
                     </p>
 
                     <div className="midiaSociais">
-{/*                         <a href="https://www.facebook.com/eduardo.dudu.5496" target="_blanck">
-                            <FontAwesomeIcon className={styles.faIcon} icon={ faFacebook }></FontAwesomeIcon>
+                        <a href="https://www.facebook.com/eduardo.dudu.5496" target="_blanck">
+                            <FontAwesomeIcon className="faIcon" icon={ faFacebook }></FontAwesomeIcon>
                         </a>
                         <a href="https://www.linkedin.com/in/eduardo-gomes12/" target="_blanck">
-                            <FontAwesomeIcon className={styles.faIcon} icon={ faLinkedin }></FontAwesomeIcon>
+                            <FontAwesomeIcon className="faIcon" icon={ faLinkedin }></FontAwesomeIcon>
                         </a>
                         <a href="https://github.com/dudueduardo121" target="_blanck">
-                            <FontAwesomeIcon className={styles.faIcon} icon={ faGithubAlt }></FontAwesomeIcon>
+                            <FontAwesomeIcon className="faIcon" icon={ faGithubAlt }></FontAwesomeIcon>
                         </a>
                         <a href="curricEduardo.pdf" target="_blanck">
-                            <FontAwesomeIcon className={styles.faIcon} icon={ faReadme }></FontAwesomeIcon>
-                        </a> */}
+                            <FontAwesomeIcon className="faIcon" icon={ faReadme }></FontAwesomeIcon>
+                        </a>
                     </div>
                 </div>
             </div>

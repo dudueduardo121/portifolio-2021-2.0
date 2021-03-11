@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.css'
+
 /* inicio scrool-page react aos */
-
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 /* fim */
 
 export default function Habilidades() {
 
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
 
     const percentage = [50, 40, 30, 20, 60, 70, 80, 90, 35]
 
@@ -20,7 +24,7 @@ export default function Habilidades() {
                 </div>
             </div>
             <div className="container">
-                <div className="row bgRow">
+                <div className="row bgRow" data-aos="fade-up">
                     <div className="col-12 col-md-6">
                         <div className="row">
                             <div className="col-12 col-md-6">
